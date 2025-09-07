@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pribadi | Galuh Kurnia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a class="nav-brand" href="#beranda">Galuh Kurnia Pratama</a>
+            <button class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a class="nav-link" href="#profil">Profil</a></li>
+                <li class="nav-item"><a class="nav-link" href="#biodata">Biodata</a></li>
+                <li class="nav-item"><a class="nav-link" href="#pengalaman">Pengalaman</a></li>
+                <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="beranda" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Selamat Datang</h1>
+            <p class="hero-subtitle">Website pribadi saya, tempat saya berbagi pengalaman, minat, dan karya.</p>
+            <a href="#profil" class="hero-btn">Lihat Profil</a>
+        </div>
+    </header>
+
+    <!-- Profil Section -->
+    <section id="profil" class="section profil-section">
+        <div class="container">
+            <h2 class="section-title">Profil</h2>
+            <div class="profil-content">
+                <div class="profil-img-container">
+                    <img src="assets/image/galh.jpg" class="profil-img" alt="Foto Profil Galuh Kurnia">
+                </div>
+                <div class="profil-text">
+                    <h3 class="profil-name">Galuh Kurnia Pratama</h3>
+                    <p>Saya mahasiswa Fisika yang tertadik menggabungkan ilmu sains dengan teknologi modern berbasis sensor, web, dan kecerdasan buatan. Melalui pengalaman di Organisasi Robotika, saya belajar menyelesaikan tantangan teknis dengan pendekatan kreatif dan sistematis.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/galuh-kurnia-a25b9b325?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BSq2Ht6N%2FSR6a32l1xvoR2A%3D%3D" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href=" https://github.com/galhkoernia" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/galh_krnia?igsh=aXVrbjZuZm90cnBk" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Biodata Section -->
+    <section id="biodata" class="section biodata-section">
+        <div class="container">
+            <h2 class="section-title">Biodata & Hobi</h2>
+            <div class="biodata-content">
+                <div class="biodata-card">
+                    <h3 class="biodata-card-title">Data Diri</h3>
+                    <ul class="biodata-list">
+                        <li class="biodata-item">
+                            <span class="biodata-label">Nama:</span>
+                            <span class="biodata-value">Galuh Kurnia Pratama</span>
+                        </li>
+                        <li class="biodata-item">
+                            <span class="biodata-label">Asal:</span>
+                            <span class="biodata-value">Sedati, Sidoarjo, Jawa Timur</span>
+                        </li>
+                        <li class="biodata-item">
+                            <span class="biodata-label">Minat:</span>
+                            <span class="biodata-value">Sensor, Web Development, AI</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="biodata-card">
+                    <h3 class="biodata-card-title">Hobi</h3>
+                    <ul class="hobby-list">
+                        <li class="hobby-item">
+                            <i class="fas fa-paint-brush hobby-icon"></i>
+                            <span>Menggambar</span>
+                        </li>
+                        <li class="hobby-item">
+                            <i class="fas fa-palette hobby-icon"></i>
+                            <span>Melukis</span>
+                        </li>
+                        <li class="hobby-item">
+                            <i class="fas fa-book hobby-icon"></i>
+                            <span>Membaca</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pengalaman Section -->
+    <section id="pengalaman" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title">Pengalaman</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2022</div>
+                        <h3 class="timeline-title">Karyawan Magang</h3>
+                        <p class="timeline-desc">CV. RuasLidi Architecture</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2024</div>
+                        <h3 class="timeline-title">Anggota Organisasi Robotik</h3>
+                        <p class="timeline-desc">Aktif dalam pengembangan proyek robotika</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2025</div>
+                        <h3 class="timeline-title">Mengikuti Bootcamp Teknologi</h3>
+                        <p class="timeline-desc">Peningkatan skill di bidang teknologi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Kontak</h2>
+            <div class="contact-content">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Nama</label>
+                        <input type="text" id="name" class="form-input" placeholder="Masukkan nama Anda">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-input" placeholder="Masukkan email Anda">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Pesan</label>
+                        <textarea id="message" class="form-textarea" rows="4" placeholder="Tulis pesan Anda di sini"></textarea>
+                    </div>
+                    <button type="submit" class="form-btn">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2024 Galuh Kurnia Pratama. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript Toggle Menu Mobile
+        document.getElementById('navToggle').addEventListener('click', function() {
+            document.getElementById('navMenu').classList.toggle('active');
+        });
+
+        // Smooth Scroll Navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close Mobile Menu
+                    document.getElementById('navMenu').classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
