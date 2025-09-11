@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Pribadi | Galuh Kurnia</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -36,26 +36,33 @@
         </div>
     </header>
 
-    <!-- Profil Section -->
+        <!-- Profil Section -->
     <section id="profil" class="section profil-section">
-        <div class="container">
-            <h2 class="section-title">Profil</h2>
-            <div class="profil-content">
-                <div class="profil-img-container">
-                    <img src="assets/image/galh.jpg" class="profil-img" alt="Foto Profil Galuh Kurnia">
-                </div>
-                <div class="profil-text">
-                    <h3 class="profil-name">Galuh Kurnia Pratama</h3>
-                    <p>Saya mahasiswa Fisika yang tertadik menggabungkan ilmu sains dengan teknologi modern berbasis sensor, web, dan kecerdasan buatan. Melalui pengalaman di Organisasi Robotika, saya belajar menyelesaikan tantangan teknis dengan pendekatan kreatif dan sistematis.</p>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/galuh-kurnia-a25b9b325?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BSq2Ht6N%2FSR6a32l1xvoR2A%3D%3D" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href=" https://github.com/galhkoernia" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="https://www.instagram.com/galh_krnia?igsh=aXVrbjZuZm90cnBk" class="social-link"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
+    <div class="container">
+        <h2 class="section-title">Profil</h2>
+        <div class="profil-content">
+        <div class="profil-img-container">
+            <img src="assets/image/galh.jpg" class="profil-img" alt="Foto Profil Galuh Kurnia">
+        </div>
+        <div class="profil-text">
+            <!-- Salam Otomatis -->
+            <h2 id="salam" class="salam-text"></h2>
+
+            <h3 class="profil-name">Galuh Kurnia Pratama</h3>
+            <p>
+            Saya mahasiswa Fisika yang tertarik menggabungkan ilmu sains dengan teknologi modern berbasis sensor, web, dan kecerdasan buatan. 
+            Melalui pengalaman di Organisasi Robotika, saya belajar menyelesaikan tantangan teknis dengan pendekatan kreatif dan sistematis.
+            </p>
+            <div class="social-links">
+            <a href="https://www.linkedin.com/in/galuh-kurnia-a25b9b325" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/galhkoernia" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/galh_krnia" class="social-link"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
+        </div>
+    </div>
     </section>
+
 
     <!-- Biodata Section -->
     <section id="biodata" class="section biodata-section">
@@ -132,27 +139,37 @@
 
     <!-- Kontak Section -->
     <section id="kontak" class="section contact-section">
-        <div class="container">
-            <h2 class="section-title">Kontak</h2>
-            <div class="contact-content">
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name" class="form-label">Nama</label>
-                        <input type="text" id="name" class="form-input" placeholder="Masukkan nama Anda">
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" id="email" class="form-input" placeholder="Masukkan email Anda">
-                    </div>
-                    <div class="form-group">
-                        <label for="message" class="form-label">Pesan</label>
-                        <textarea id="message" class="form-textarea" rows="4" placeholder="Tulis pesan Anda di sini"></textarea>
-                    </div>
-                    <button type="submit" class="form-btn">Kirim Pesan</button>
-                </form>
+    <div class="container">
+        <h2 class="section-title">Kontak</h2>
+        <div class="contact-content">
+        <form class="contact-form">
+            <div class="form-group">
+            <label for="name" class="form-label">Nama</label>
+            <input type="text" id="name" class="form-input" placeholder="Masukkan nama Anda">
             </div>
+            <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" class="form-input" placeholder="Masukkan email Anda">
+            </div>
+            <div class="form-group">
+            <label for="message" class="form-label">Pesan</label>
+            <textarea id="message" class="form-textarea" rows="4" placeholder="Tulis pesan Anda di sini"></textarea>
+            </div>
+
+            <!-- Tambahan: Input Tanggal Lahir -->
+            <div class="form-group">
+            <label for="lahir" class="form-label">Tanggal Lahir</label>
+            <input type="date" id="lahir" class="form-input">
+            </div>
+            <button type="button" class="form-btn success-btn" onclick="hitungUsia()">Hitung Usia</button>
+            <p id="hasilUsia" class="hasil-usia"></p>
+
+            <button type="submit" class="form-btn primary-btn">Kirim Pesan</button>
+        </form>
         </div>
+    </div>
     </section>
+
 
     <!-- Footer -->
     <footer class="footer">
@@ -161,28 +178,8 @@
         </div>
     </footer>
 
-    <script>
-        // JavaScript Toggle Menu Mobile
-        document.getElementById('navToggle').addEventListener('click', function() {
-            document.getElementById('navMenu').classList.toggle('active');
-        });
-
-        // Smooth Scroll Navigation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    window.scrollTo({
-                        top: target.offsetTop - 70,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Close Mobile Menu
-                    document.getElementById('navMenu').classList.remove('active');
-                }
-            });
-        });
-    </script>
+    <!-- Script -->
+     <script src="js/script.js"></script>
+     
 </body>
 </html>
